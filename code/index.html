@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Word Scrambler</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/6ba60d5fb5.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="../media/alphabet-icon-png-9.jpg.png"/>
+    </head>
+    <body>
+        <h1 class="my-headers">Word Scrambler</h1>
+        <div class="input-scrambling">
+            <div class="original-scrambled" id="original-sentence">
+                <textarea id="input-sentence" class="sentence-fields" type="text"  placeholder="Original text" cols="40" rows="5" autocomplete='off'></textarea>
+            </div>
+            <div>
+                <button class="convert" id="convert-button" onclick="convert(document.getElementById('input-sentence').value)"><i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="original-scrambled" id="scrambled-sentence">
+                <textarea id="output-sentence" class="sentence-fields" type="text" placeholder="Scrambled text" cols="40" rows="5" readonly autocomplete='off'></textarea>
+            </div>
+        </div>
+        <div class="information">        
+            <h2>About This Website</h2>
+            <p>According to the research in Oxford University, humans are able to read sebtebces, as long as the first and the last letter of each word stays the same, while the inner part can be arranged any way you like and given the context, you'd still be able to read the word. This is because when we read a sentence, we do not read each word on it's own, but rather with the context given around it, which then our brain makes some sense of.</p>
+            <p>In my finding of that trait of the human mind, I decided to make a website which takes in a sentence, or really any sequence of words, seperated by spaces, and rearrages the inner part of each word, giving back the scrambled text which you would still be able to read, as per the experiment. Currently, the website only works when the words are only seperated by spaces.</p>
+        </div>
+    </body>
+</html>
